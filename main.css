@@ -1,0 +1,161 @@
+::placeholder{
+    color:rgb(149, 149, 149);
+    font-size: 30pt;
+}
+
+input:focus{
+    outline: none;
+}
+
+body{
+    color: rgb(31, 33, 73);
+    background-color: rgb(121, 162, 224);
+    font-family: 'Quicksand', sans-serif;
+}
+button:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  
+
+h1{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 75px;
+    color: peachpuff;
+}
+
+.yourGuesses{
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 40px;
+    color: peachpuff;
+}
+
+input {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: px;
+    font-size: 30pt;
+    width: 110px;
+    height: 70px;
+    background-color: beige;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 9px;
+    border: 0px;
+    color: rgb(31, 33, 73);
+}
+
+.buttonContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basicButton {
+    color: rgb(31, 33, 73);
+    background-color: beige;
+    border: 0px;
+    border-radius: 9px; 
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80px;
+}
+
+.guessContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guess {
+    width: 80px;
+    height: 80px;
+    border-radius: 90px;
+    background-color: beige;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32pt;
+    
+}
+
+#go{
+    display: block;
+    width: 130px;
+    height: 50px;
+    font-size: 22pt;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#quoteContainer {
+    height: 50px;
+}
+
+#msg {
+    text-align: center;
+    margin: auto;
+    font-size: 28px;
+    margin-top: 20px;
+    color: peachpuff;
+}
+
+#guessInput{
+    caret-color: transparent;
+}
+#first_button {
+    transition: all 2s;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97);
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  @keyframes idle { 100% {} }
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  @keyframes shakeRetry {
+    10%,
+    90% {
+      transform: translate3d(-.5px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(.5px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(1px, 0, 0);
+    }
+  }

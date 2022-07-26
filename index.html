@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+
+    <div class = 'gameContainer'>
+        <h1>Guess The Number!</h1>
+        <p class = 'yourGuesses'>Your Guesses:</p>
+        <div class = 'guessContainer'>
+          <div id = 'guess1' class = 'guess'>-</div>
+          <div id = 'guess2' class = 'guess'>-</div>
+          <div id = 'guess3' class = 'guess'>-</div>
+          <div id = 'guess4' class = 'guess'>-</div>
+          <div id = 'guess5' class = 'guess'>-</div>
+        </div>
+        <div id = 'quoteContainer'>
+          <p id = 'msg'></p>
+        </div>
+        </p>
+        <input id = 'guessInput' placeholder = '1-100' autofocus></input>
+        <button id = 'go' class = 'basicButton'>Submit</button>
+        <div class = 'buttonContainer'>
+          <button id = 'retry' class = 'basicButton'>Retry</button>
+          <button id = 'hint' class = 'basicButton'>Hint</button>
+        </div>
+    </div>
+   
+  </body>
+  <script src='js/guessing-game.js'></script>
+</html>
